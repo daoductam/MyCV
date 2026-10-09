@@ -190,8 +190,8 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1.2em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\itshape\color{text} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{13pt}{1em}\bodyfont\bfseries\color{text} #1}}
-\newcommand*{\paragraphstyle}{\fontsize{10pt}{1.3em}\bodyfont\upshape\color{text}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\newcommand*{\paragraphstyle}{\fontsize{10pt}{1.1em}\bodyfont\upshape\color{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{11.5pt}{1.15em}\bodyfont\bfseries\color{text} #1}}
@@ -200,7 +200,7 @@
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8.5pt}{1.15em}\bodyfont\slshape\color{text} #1}}
 \newcommand*{\entrysimpledatestyle}[1]{{\fontsize{8.5pt}{1.15em}\bodyfont\slshape\color{text} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{8.5pt}{1.15em}\bodyfont\slshape\color{text} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9.5pt}{1.25em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1.1em}\bodyfont\upshape\color{text} #1}}
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -330,8 +330,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{1mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{0.2mm}
-\newcommand{\acvSectionContentTopSkip}{0.5mm}
+\newcommand{\acvSectionTopSkip}{1.5mm}
+\newcommand{\acvSectionContentTopSkip}{0.8mm}
 
 
 %-------------------------------------------------------------------------------
@@ -530,7 +530,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-  \vspace{-2.0mm}
+  \vspace{-1.5mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -555,7 +555,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
+  \vspace{-3.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -563,5 +563,5 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{-3.0mm}
 }
