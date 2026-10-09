@@ -1,0 +1,30 @@
+\Needspace{0.45\textheight}
+\cvsection{Projects} %	SECTION TITLE
+\begin{cventries} %	CONTENT
+
+    \cvsimpleentry
+    {\href{https://github.com/daoductam/revita-microservice}{\textbf{REVITA: POLYCLINIC MANAGEMENT SYSTEM - PERSONAL PROJECT}}} % Name
+    {05/2026 - 08/2026} % Date
+    {
+      \begin{cvitems} % Description
+        \item {Architected a \textbf{Microservices} ecosystem using \textbf{Java 21 \& Spring Boot 3.3}, comprising \textbf{10 business services} (Auth, User, Clinic, Appointment, Queue, Clinical, Billing, CMS, AI, Notification) orchestrated via \textbf{Spring Cloud Gateway} and \textbf{Eureka}.}
+        \item {Implemented \textbf{Event-Driven Architecture} with \textbf{Apache Kafka} (leveraging \textbf{Outbox pattern}, retry/DLT) for asynchronous processing; integrated \textbf{WebSocket (STOMP)} for real-time queue tracking and instant notifications.}
+        \item {Engineered end-to-end clinical workflows, \textbf{RBAC (6 roles)}, medical record encryption, automated billing via \textbf{PayOS}, and an \textbf{AI Assistant (FastAPI, Groq/Gemini)} for symptom-based diagnostic suggestions.}
+        \item {Designed polyglot persistence (\textbf{MySQL} for business data \& \textbf{MongoDB} for drug catalog), \textbf{Redis} cache; built web UI with \textbf{Next.js 15 \& React 19}; containerized and deployed on \textbf{Docker \& Kubernetes (Minikube, Helm, Traefik)}.}
+        \item {\textbf{Technologies}: Java 21, Spring Boot, Spring Cloud, FastAPI, Python, Apache Kafka, Redis, MySQL, MongoDB, Next.js, Docker, Kubernetes.}
+      \end{cvitems}
+    }
+  \cvsimpleentry
+    {\href{https://github.com/daoductam/web-film-vibe}{\textbf{CINESTREAM: FULL-STACK MOVIE STREAMING ECOSYSTEM - PERSONAL PROJECT}}} % Name
+    {04/2026 - 07/2026} % Date
+    {
+      \begin{cvitems} % Description
+        \item {Built a full-stack movie streaming ecosystem with a \textbf{Java 21 \& Spring Boot 3.4+} REST backend for \textbf{React 19} web and \textbf{Android Native} clients; used \textbf{MySQL} for business data and \textbf{Redis} to cache popular movie categories.}
+        \item {Implemented stateless authentication with \textbf{Spring Security}, \textbf{BCrypt}, and \textbf{JWT Refresh Token Rotation}; added an IP-based \textbf{Rate Limiting Filter} to mitigate DDoS and spam requests.}
+        \item {Automated movie data synchronization from external providers with a \textbf{WebClient crawler}; integrated \textbf{Groq AI SDK} to provide a conversational movie recommendation chatbot.}
+        \item {Developed the web client with \textbf{React 19 \& TypeScript}, \textbf{Vite}, \textbf{Tailwind CSS 4}, \textbf{Zustand}, \textbf{TanStack Query}, and \textbf{Vidstack} for HLS playback; built the Android app with \textbf{Kotlin \& Jetpack Compose (Material 3)}, \textbf{Hilt}, \textbf{Room} offline history/favorites, and \textbf{Media3 ExoPlayer} for episode progression and watch-progress tracking.}
+        \item {Containerized the system with \textbf{Docker \& Docker Compose} and configured \textbf{GitHub Actions (CI/CD)}.}
+        \item {\textbf{Technologies}: Java 21, Spring Boot, Spring Security, MySQL, Redis, Groq AI, React 19, TypeScript, Tailwind CSS, Kotlin, Jetpack Compose, Room, Media3 ExoPlayer, Docker, GitHub Actions.}
+      \end{cvitems}
+    }
+\end{cventries}

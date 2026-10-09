@@ -1,0 +1,30 @@
+\Needspace{0.45\textheight}
+\cvsection{Dự Án} % TIÊU ĐỀ MỤC
+\begin{cventries} % NỘI DUNG
+
+    \cvsimpleentry
+    {\href{https://github.com/daoductam/revita-microservice}{\textbf{REVITA: HỆ THỐNG QUẢN LÝ PHÒNG KHÁM ĐA KHOA - DỰ ÁN CÁ NHÂN}}} % Tên Dự án
+    {05/2026 - 08/2026} % Thời gian
+    {
+      \begin{cvitems} % Description
+        \item {Thiết kế kiến trúc \textbf{Microservices} với \textbf{Java 21 \& Spring Boot 3.3}, gồm \textbf{10 dịch vụ nghiệp vụ} (Auth, User, Clinic, Appointment, Queue, Clinical, Billing, CMS, AI, Notification) phối hợp qua \textbf{Spring Cloud Gateway} và \textbf{Eureka}.}
+        \item {Triển khai \textbf{Event-Driven Architecture} với \textbf{Apache Kafka} (áp dụng \textbf{Outbox pattern}, retry/DLT) cho xử lý bất đồng bộ; tích hợp \textbf{WebSocket (STOMP)} điều phối trạng thái hàng đợi và thông báo thời gian thực.}
+        \item {Xây dựng luồng khám chữa bệnh khép kín, phân quyền \textbf{RBAC (6 vai trò)}, mã hóa dữ liệu bệnh án, tích hợp cổng thanh toán \textbf{PayOS} và trợ lý \textbf{AI Assistant (FastAPI, Groq/Gemini)} hỗ trợ gợi ý chẩn đoán triệu chứng.}
+        \item {Thiết kế kiến trúc đa CSDL (\textbf{MySQL} nghiệp vụ \& \textbf{MongoDB} tra cứu thuốc), bộ nhớ đệm \textbf{Redis}; xây dựng giao diện với \textbf{Next.js 15, React 19}; đóng gói và điều phối trên \textbf{Docker \& Kubernetes (Minikube, Helm, Traefik)}.}
+        \item {\textbf{Công nghệ}: Java 21, Spring Boot, Spring Cloud, FastAPI, Python, Apache Kafka, Redis, MySQL, MongoDB, Next.js, Docker, Kubernetes.}
+      \end{cvitems}
+    }
+  \cvsimpleentry
+    {\href{https://github.com/daoductam/web-film-vibe}{\textbf{CINESTREAM: HỆ SINH THÁI XEM PHIM FULL-STACK - DỰ ÁN CÁ NHÂN}}} % Tên Dự án
+    {04/2026 - 07/2026} % Thời gian
+    {
+      \begin{cvitems} % Description
+        \item {Xây dựng hệ sinh thái xem phim full-stack với backend REST bằng \textbf{Java 21 \& Spring Boot 3.4+}, phục vụ ứng dụng \textbf{React 19} và \textbf{Android Native}; sử dụng \textbf{MySQL} cho dữ liệu nghiệp vụ và \textbf{Redis} để cache các danh mục phim phổ biến.}
+        \item {Triển khai xác thực stateless với \textbf{Spring Security}, \textbf{BCrypt} và \textbf{JWT Refresh Token Rotation}; xây dựng \textbf{Rate Limiting Filter} giới hạn request theo IP để giảm thiểu DDoS và spam.}
+        \item {Tự động thu thập, đồng bộ và cập nhật dữ liệu phim từ các nguồn bên ngoài bằng crawler \textbf{WebClient}; tích hợp \textbf{Groq AI SDK} để cung cấp chatbot tư vấn và gợi ý phim.}
+        \item {Phát triển web client bằng \textbf{React 19 \& TypeScript}, \textbf{Vite}, \textbf{Tailwind CSS 4}, \textbf{Zustand}, \textbf{TanStack Query} và \textbf{Vidstack} hỗ trợ HLS; xây dựng ứng dụng Android bằng \textbf{Kotlin \& Jetpack Compose (Material 3)}, \textbf{Hilt}, \textbf{Room} (lịch sử/yêu thích offline) và \textbf{Media3 ExoPlayer} (tự chuyển tập, lưu tiến trình xem).}
+        \item {Đóng gói hệ thống với \textbf{Docker \& Docker Compose} và thiết lập quy trình \textbf{GitHub Actions (CI/CD)}.}
+        \item {\textbf{Công nghệ}: Java 21, Spring Boot, Spring Security, MySQL, Redis, Groq AI, React 19, TypeScript, Tailwind CSS, Kotlin, Jetpack Compose, Room, Media3 ExoPlayer, Docker, GitHub Actions.}
+      \end{cvitems}
+    }
+\end{cventries}
